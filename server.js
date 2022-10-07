@@ -381,12 +381,7 @@ app.patch('/students', valNsan,(req, res) => {
         })
         .catch(err => console.log(err))
 })
-const config = {
-headers:{
-	accessKeyId:"AKIA4K6556ATODVW4HGN",
-	secretAccessKey:"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"
-	}
-};
+
 app.get('/say', (req, res) => {
     const axios_url = `https://assgn9-64twckki.ue.gateway.dev/hello?keyword=${req.query.keyword}`
     axios.get(axios_url)
